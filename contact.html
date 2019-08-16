@@ -47,12 +47,12 @@
       <form action="#" method="post">
         <label class="standard-label" for="contact-email">E-mail:*</label><br>
         <!-- id would position the cursor where the text need to be keyed -->
-        <input class="keyin-box" type="email" id="contact-email" required><br><br>
+        <input class="keyin-box" type="email" id="contact-email" placeholder="example@email.com" required><br><br>
         <label class="standard-label" for="contact-telephone">Telephone:(optional)</label>
-        <input class="keyin-box" type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br><br>
+        <input class="keyin-box" type="tel" id="contact-telephone" placeholder="XXX-XXX-XXXX' pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br><br>
         <label class="standard-label" for="contact-message">Message:*</label>
         <!-- for more text space -->
-        <textarea class="keyin-box" maxlength="55" id="contact-message" required></textarea><br>
+        <textarea class="keyin-box" maxlength="55" id="contact-message" placeholder="Type your message..." required></textarea><br>
         <!--input type="text" - is for less text-->
         <input class="send-button" type="submit" value="Send Message">
       </form>
