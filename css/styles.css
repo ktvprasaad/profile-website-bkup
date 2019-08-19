@@ -4,8 +4,8 @@
   --anchor-color: #000;
   --anchor-vi-color: #800040;
   --anchor-act-color: #265340;
-  --button-bg-color: #787470;
-  --button-text-color: pink;
+  --button-bg-color: black;
+  --button-text-color: white;
   --grid-color: #bdb6af;
   --contact-grid-color: #d0d0b0;
   --kf-sun-color-1: #edc655;
@@ -168,6 +168,7 @@ color: #2b2b2b;
 
 .page-header__item {
   flex: 0 1 125px;
+  height: 100%;
   padding: var(--padding-10px);
 }
 
@@ -200,6 +201,10 @@ color: #2b2b2b;
   max-width: var(--max-width-700px);
   margin: var(--margin-center); /* to center  the profile container */
   text-align: center;
+}
+
+.berlin-illustration {
+  max-width: 100%;
 }
 
 .skillset {
@@ -254,6 +259,14 @@ color: #2b2b2b;
 }
 
 @media all and (max-width: 500px) {
+  .portfolio__portrait {
+    /* float: left; /* image will be placed on left side with regard to the child item */
+    width: 400px;
+    max-width: 100%;
+    margin-right: 40px;
+    border-radius: 50%; /* for rounded image */
+  }
+
   .grid,
   .contact__grid {
     grid-template-columns: 1fr;
@@ -281,7 +294,7 @@ color: #2b2b2b;
   }
 
   h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
