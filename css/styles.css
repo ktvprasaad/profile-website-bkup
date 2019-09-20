@@ -258,6 +258,13 @@ color: #2b2b2b;
   background-color: var(--primary-bg-color);
 }
 
+.error-message {
+  color: navy;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+}
+
 @media all and (max-width: 500px) {
   .portfolio__portrait {
     /* float: left; /* image will be placed on left side with regard to the child item */
