@@ -44,16 +44,16 @@ padding: var(--padding-10px); /* Adds a 10px inner spacing to all sides */
   font-family: inherit;
   background-color: inherit;
   -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
 
   /* by default it is 'ease' if this property not specified */
   -webkit-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
+       -o-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
 }
 
 .navigation-list li {
@@ -99,16 +99,16 @@ button {
   /* gives the button a botton border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
 
   /* by default it is 'ease' if this property not specified */
   -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
 
   /* by default it is '0s' if this property not specified */
 
@@ -136,16 +136,16 @@ button {
   /* gives the button a botton border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
 
   /* by default it is 'ease' if this property not specified */
   -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
 
   /* by default it is '0s' if this property not specified */
 
@@ -173,16 +173,16 @@ button {
   /* gives the button a botton border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.5s;
-  -o-transition-duration: 0.5s;
-  transition-duration: 0.5s;
+       -o-transition-duration: 0.5s;
+          transition-duration: 0.5s;
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
 
   /* by default it is 'ease' if this property not specified */
   -webkit-transition-timing-function: linear;
-  -o-transition-timing-function: linear;
-  transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
 
   /* by default it is '0s' if this property not specified */
 
@@ -220,7 +220,7 @@ color: #2b2b2b;
 
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .page-header {
@@ -237,16 +237,16 @@ color: #2b2b2b;
 
 .page-header__item {
   -webkit-box-flex: 0;
-  -ms-flex: 0 1 125px;
-  flex: 0 1 125px;
+      -ms-flex: 0 1 125px;
+          flex: 0 1 125px;
   height: 100%;
   padding: 10px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   text-align: right;
 }
 
@@ -265,8 +265,8 @@ color: #2b2b2b;
   display: flex; /* to change the layout of the social-media icons */
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column; /* to position the elements in the flex container in column wise */
+      -ms-flex-direction: column;
+          flex-direction: column; /* to position the elements in the flex container in column wise */
   text-align: center; /* this would align the images as well */
 }
 
@@ -345,6 +345,13 @@ color: #2b2b2b;
   background-color: #b0d0b0;
 }
 
+.error-message {
+  color: navy;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 16px;
+}
+
 @media all and (max-width: 500px) {
   .portfolio__portrait {
     /* float: left; /* image will be placed on left side with regard to the child item */
@@ -390,30 +397,30 @@ color: #2b2b2b;
 @-webkit-keyframes logo-trans {
   from {
     -webkit-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
   }
 
   to {
     -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 
 @keyframes logo-trans {
   from {
     -webkit-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
+            transform: scale(0.8, 0.8);
   }
 
   to {
     -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 
 .page-header__item--trans {
   -webkit-animation: 0.7s logo-trans infinite alternate linear;
-  animation: 0.7s logo-trans infinite alternate linear;
+          animation: 0.7s logo-trans infinite alternate linear;
 }
 
 @-webkit-keyframes color-change {
@@ -453,19 +460,19 @@ animation-timing-function: linear;
 } */
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-  animation: 4s color-change infinite alternate linear;
+          animation: 4s color-change infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move {
   /* to move the bigger cloud from left to right */
   from {
     -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 
@@ -473,30 +480,30 @@ animation-timing-function: linear;
   /* to move the bigger cloud from left to right */
   from {
     -webkit-transform: translate(0, 50px);
-    transform: translate(0, 50px);
+            transform: translate(0, 50px);
   }
 
   to {
     -webkit-transform: translate(200px, 50px);
-    transform: translate(200px, 50px);
+            transform: translate(200px, 50px);
   }
 }
 
 .cloud-front {
   -webkit-animation: 30s cloud-move infinite alternate linear;
-  animation: 30s cloud-move infinite alternate linear;
+          animation: 30s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
   /* to move the smaller cloud from left to right */
   from {
     -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
   }
 
   to {
     -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
   }
 }
 
@@ -504,16 +511,16 @@ animation-timing-function: linear;
   /* to move the smaller cloud from left to right */
   from {
     -webkit-transform: translate(446px, 48px);
-    transform: translate(446px, 48px);
+            transform: translate(446px, 48px);
   }
 
   to {
     -webkit-transform: translate(100px, 48px);
-    transform: translate(100px, 48px);
+            transform: translate(100px, 48px);
   }
 }
 
 .cloud-back {
   -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-  animation: 34s cloud-move-reverse infinite alternate linear;
+          animation: 34s cloud-move-reverse infinite alternate linear;
 }

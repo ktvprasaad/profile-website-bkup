@@ -45,16 +45,27 @@
     <div class="contact__grid-form">
       <h1>Your Contact?</h1>
       <form action="#" method="post">
-        <label class="standard-label" for="contact-email">E-mail:*</label><br>
-        <!-- id would position the cursor where the text need to be keyed -->
-        <input class="keyin-box" type="email" id="contact-email" placeholder="example@email.com" required><br><br>
-        <label class="standard-label" for="contact-telephone">Telephone:(optional)</label>
-        <input class="keyin-box" type="tel" id="contact-telephone" placeholder="xxx-xxx-xxxx" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br><br>
-        <label class="standard-label" for="contact-message">Message:*</label>
-        <!-- for more text space -->
-        <textarea class="keyin-box" maxlength="55" id="contact-message" placeholder="Type your message..." required></textarea><br>
-        <!--input type="text" - is for less text-->
-        <input class="send-button" type="submit" value="Send Message">
+        <div class="input-wrapper">
+          <label for="emailId">E-mail:*</label><br>
+          <!-- id would position the cursor where the text need to be keyed -->
+          <!--<input class="keyin-box" type="email" id="contact-email" placeholder="example@email.com" required><br><br> -->
+          <input class="keyin-box" type="email" id="emailId" placeholder="example@email.com"><br>
+        </div>
+        <div class="input-wrapper">
+          <label for="tele">Telephone:(optional)</label>
+          <!--<input class="keyin-box" type="tel" id="contact-telephone" placeholder="xxx-xxx-xxxx" pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br><br>-->
+          <input class="keyin-box" type="tel" id="tele" placeholder="##########" maxlength="10"><br>
+        </div>
+        <div class="input-wrapper">
+          <label class="standard-label" for="message">Message:*</label>
+          <!-- for more text space -->
+          <!--<textarea class="keyin-box" maxlength="55" id="contact-message" placeholder="Type your message..." required></textarea><br>-->
+          <textarea class="keyin-box" maxlength="55" id="message" placeholder="Type your message..."></textarea><br>
+          <!--input type="text" - is for less text-->
+        </div>
+        <div>
+          <input class="send-button" type="submit" value="Send Message">
+        </div>
       </form>
     </div>
   </div>
@@ -71,5 +82,6 @@
     </div>
   </footer>
   <script src="js/tota11y.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
