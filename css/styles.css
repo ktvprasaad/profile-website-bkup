@@ -229,7 +229,7 @@ color: #2b2b2b;
   display: grid;
 
   /* fr - fraction - new unit for grid - using this would make the columns arrange themselves without hiding any content when we resize the broswer */
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 
   /* grid-template-columns: 300px 300px 300px; */
@@ -246,6 +246,11 @@ color: #2b2b2b;
   background-color: var(--grid-color);
   padding: var(--padding-10px);
   border-radius: 5%;
+}
+
+.grid__image {
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .contact__grid-form {

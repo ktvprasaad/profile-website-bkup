@@ -3,7 +3,7 @@
 body {
   /* Var() function to use the CSS variable declared under the pseudo class :root */
   background-color: #b0d0b0;
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
   font-weight: 400;
   font-size: 20px;
   line-height: 1;
@@ -30,30 +30,19 @@ a {
 
 /* div {
 padding: var(--padding-10px); /* Adds a 10px inner spacing to all sides */
-
 /* margin: 10px; /* Adds a 10px outer spacing to all sides */
-
 /* border: 1px solid black; /* Attributes describe: thickness, type, color */
-
 /* } */
 .navigation-list {
   /* removes the dots (bullet) for the lists */
   list-style-type: none;
-
   /* takes the font from the outer container */
   font-family: inherit;
   background-color: inherit;
-  -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
+  transition-duration: 0.5s;
   transition-property: opacity;
-
   /* by default it is 'ease' if this property not specified */
-  -webkit-transition-timing-function: ease-in;
-       -o-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
 }
 
 .navigation-list li {
@@ -78,114 +67,72 @@ a:active {
   color: #265340;
 }
 
-
 button {
   /* overwrites the browser defaults and resets the border */
   border: none;
   display: inline-block;
-
   /* takes the font from the outer container */
   font-family: inherit;
-
   /* styles the background color, font color, and text decoration (underline,etc.) of the button */
   background-color: black;
   color: white !important;
   text-decoration: none;
-
   /* add spacing to the button */
   padding: 10px;
   border-radius: 3px;
-
   /* gives the button a botton border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
+  transition-duration: 0.5s;
   transition-property: opacity;
-
   /* by default it is 'ease' if this property not specified */
-  -webkit-transition-timing-function: linear;
-       -o-transition-timing-function: linear;
-          transition-timing-function: linear;
-
+  transition-timing-function: linear;
   /* by default it is '0s' if this property not specified */
-
   /* transition-delay: 1s; */
 }
-
 
 .button {
   /* overwrites the browser defaults and resets the border */
   border: none;
   display: inline-block;
-
   /* takes the font from the outer container */
   font-family: inherit;
-
   /* styles the background color, font color, and text decoration (underline,etc.) of the button */
   background-color: black;
   color: white !important;
   text-decoration: none;
-
   /* add spacing to the button */
   padding: 10px;
   border-radius: 3px;
-
   /* gives the button a botton border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
+  transition-duration: 0.5s;
   transition-property: opacity;
-
   /* by default it is 'ease' if this property not specified */
-  -webkit-transition-timing-function: linear;
-       -o-transition-timing-function: linear;
-          transition-timing-function: linear;
-
+  transition-timing-function: linear;
   /* by default it is '0s' if this property not specified */
-
   /* transition-delay: 1s; */
 }
-
 
 .send-button {
   /* overwrites the browser defaults and resets the border */
   border: none;
   display: inline-block;
-
   /* takes the font from the outer container */
   font-family: inherit;
-
   /* styles the background color, font color, and text decoration (underline,etc.) of the button */
   background-color: black;
   color: white !important;
   text-decoration: none;
-
   /* add spacing to the button */
   padding: 10px;
   border-radius: 3px;
-
   /* gives the button a botton border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition-duration: 0.5s;
-       -o-transition-duration: 0.5s;
-          transition-duration: 0.5s;
-  -webkit-transition-property: opacity;
-  -o-transition-property: opacity;
+  transition-duration: 0.5s;
   transition-property: opacity;
-
   /* by default it is 'ease' if this property not specified */
-  -webkit-transition-timing-function: linear;
-       -o-transition-timing-function: linear;
-          transition-timing-function: linear;
-
+  transition-timing-function: linear;
   /* by default it is '0s' if this property not specified */
-
   /* transition-delay: 1s; */
 }
 
@@ -197,18 +144,15 @@ button:focus,
 .send-button:focus {
   /* let the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-
   /* reduces the opacity of the button to 80% */
   opacity: 0.6;
 }
 
 /* .button__secondary - (dot) signifies user defined class to apply styling for specific element */
-
 /* .button__secondary {
 background-color: #bda185;
 color: #2b2b2b;
 } */
-
 /* one more user defined class in BEM (Block Element Modifier) format */
 .navigation-list__item--active {
   text-decoration: none;
@@ -219,65 +163,59 @@ color: #2b2b2b;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 20px;
-
   /*  border-bottom: 1px solid black; */
-
   /* background-color: #265340; */
 }
 
 .page-header__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 125px;
-          flex: 0 1 125px;
+  flex: 0 1 125px;
   height: 100%;
   padding: 10px;
 }
 
 .page-header__item:last-child {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
 .portfolio__portrait {
-  float: left; /* image will be placed on left side with regard to the child item */
+  float: left;
+  /* image will be placed on left side with regard to the child item */
   width: 400px;
   max-width: 100%;
   margin-right: 40px;
-  border-radius: 50%; /* for rounded image */
+  border-radius: 50%;
+  /* for rounded image */
 }
 
 .page-footer {
-  clear: both; /* it clears all floats, both right & left */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; /* to change the layout of the social-media icons */
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; /* to position the elements in the flex container in column wise */
-  text-align: center; /* this would align the images as well */
+  clear: both;
+  /* it clears all floats, both right & left */
+  display: flex;
+  /* to change the layout of the social-media icons */
+  flex-direction: column;
+  /* to position the elements in the flex container in column wise */
+  text-align: center;
+  /* this would align the images as well */
 }
 
 .profile {
   max-width: 700px;
-  margin: 0 auto; /* to center  the profile container */
+  margin: 0 auto;
+  /* to center  the profile container */
 }
 
 .about__body {
   max-width: 700px;
-  margin: 0 auto; /* to center  the profile container */
+  margin: 0 auto;
+  /* to center  the profile container */
   text-align: center;
 }
 
@@ -286,19 +224,19 @@ color: #2b2b2b;
 }
 
 .skillset {
-  list-style-type: none; /* to remove the bullets from the list */
+  list-style-type: none;
+  /* to remove the bullets from the list */
 }
 
 /* .contact__body { */
 .contact__grid {
-  display: -ms-grid;
   display: grid;
   padding: 20px;
-  -ms-grid-columns: 1fr 25px 1fr;
   grid-template-columns: 1fr 1fr;
   max-width: 700px;
   grid-gap: 25px;
-  margin: 0 auto; /* to center  the profile container */
+  margin: 0 auto;
+  /* to center  the profile container */
 }
 
 .section__grid {
@@ -306,16 +244,11 @@ color: #2b2b2b;
 }
 
 .grid {
-  display: -ms-grid;
   display: grid;
-
   /* fr - fraction - new unit for grid - using this would make the columns arrange themselves without hiding any content when we resize the broswer */
-  -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
-
   /* grid-template-columns: 300px 300px 300px; */
-
   /* grid-template-rows: 300px 300px; */
 }
 
@@ -333,6 +266,11 @@ color: #2b2b2b;
   background-color: #bdb6af;
   padding: 10px;
   border-radius: 5%;
+}
+
+.grid__image {
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .contact__grid-form {
@@ -358,33 +296,30 @@ color: #2b2b2b;
     width: 400px;
     max-width: 100%;
     margin-right: 40px;
-    border-radius: 50%; /* for rounded image */
+    border-radius: 50%;
+    /* for rounded image */
   }
 
   .grid,
-  .contact__grid {
-    -ms-grid-columns: 1fr;
+.contact__grid {
     grid-template-columns: 1fr;
   }
 }
-
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid,
-  .contact__grid {
-    -ms-grid-columns: 1fr 20px 1fr;
+.contact__grid {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media all and (max-width: 750px) {
   .grid,
-  .contact__grid {
+.contact__grid {
     grid-gap: 10px;
   }
 
   .grid__item,
-  .contact__grid-item,
-  .contact__grid-form {
+.contact__grid-item,
+.contact__grid-form {
     grid-column: auto/auto;
     grid-row: auto/auto;
   }
@@ -393,64 +328,29 @@ color: #2b2b2b;
     font-size: 24px;
   }
 }
-
-@-webkit-keyframes logo-trans {
-  from {
-    -webkit-transform: scale(0.8, 0.8);
-            transform: scale(0.8, 0.8);
-  }
-
-  to {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-}
-
 @keyframes logo-trans {
   from {
-    -webkit-transform: scale(0.8, 0.8);
-            transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
   }
-
   to {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    transform: scale(1, 1);
   }
 }
-
 .page-header__item--trans {
-  -webkit-animation: 0.7s logo-trans infinite alternate linear;
-          animation: 0.7s logo-trans infinite alternate linear;
-}
-
-@-webkit-keyframes color-change {
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad;
-  }
-
-  100% {
-    fill: #f76414;
-  }
+  animation: 0.7s logo-trans infinite alternate linear;
 }
 
 @keyframes color-change {
   0% {
     fill: #edc655;
   }
-
   50% {
     fill: #fcffad;
   }
-
   100% {
     fill: #f76414;
   }
 }
-
 /* .sun {
 animation-duration: 4s;
 animation-name: color-change;
@@ -459,68 +359,31 @@ animation-direction: alternate;
 animation-timing-function: linear;
 } */
 .sun {
-  -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move {
-  /* to move the bigger cloud from left to right */
-  from {
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
-  }
-
-  to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
-  }
+  animation: 4s color-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
   /* to move the bigger cloud from left to right */
   from {
-    -webkit-transform: translate(0, 50px);
-            transform: translate(0, 50px);
+    transform: translate(0, 50px);
   }
-
   to {
-    -webkit-transform: translate(200px, 50px);
-            transform: translate(200px, 50px);
+    transform: translate(200px, 50px);
   }
 }
-
 .cloud-front {
-  -webkit-animation: 30s cloud-move infinite alternate linear;
-          animation: 30s cloud-move infinite alternate linear;
-}
-
-@-webkit-keyframes cloud-move-reverse {
-  /* to move the smaller cloud from left to right */
-  from {
-    -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
-  }
-
-  to {
-    -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
-  }
+  animation: 30s cloud-move infinite alternate linear;
 }
 
 @keyframes cloud-move-reverse {
   /* to move the smaller cloud from left to right */
   from {
-    -webkit-transform: translate(446px, 48px);
-            transform: translate(446px, 48px);
+    transform: translate(446px, 48px);
   }
-
   to {
-    -webkit-transform: translate(100px, 48px);
-            transform: translate(100px, 48px);
+    transform: translate(100px, 48px);
   }
 }
-
 .cloud-back {
-  -webkit-animation: 34s cloud-move-reverse infinite alternate linear;
-          animation: 34s cloud-move-reverse infinite alternate linear;
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
